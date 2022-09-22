@@ -1,6 +1,11 @@
 import java.util.List;
 
 public class Day1 {
+    /**
+        Task No: 1
+        By: Joseph Emmanuel Emeka
+        Date: 21-9-2022
+     */
     public static void main(String[] args) {
 
         int[] example_0 = {1,1,2};
@@ -10,9 +15,7 @@ public class Day1 {
 
         int k = removeDuplicate(example_1);
         System.out.println("Printing all the array values: "+k);
-
-        arrayPrintOut(example_1);
-
+        Print.array(example_1);
     }
 
     private static int removeDuplicate(int[] nums){
@@ -31,11 +34,5 @@ public class Day1 {
             }
         }
         return k;
-    }
-
-    private static void arrayPrintOut(int[] nums){
-        for(int num : nums){
-            System.out.println(num+" ");
-        }
     }
 }
